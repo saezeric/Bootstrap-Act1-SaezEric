@@ -52,9 +52,32 @@
     <!-- Contenido -->
     <main>
         <div class="container-fluid my-5">
-            <div class="container">
-                <div>
-                    <h1>Detalle del proyecto</h1>
+            <div class="container w-100">
+                <h1>Nuevo Proyecto</h1>
+                <div class="d-flex justify-content-end mt-5 mb-2">
+                    <a href="proyectos.html"><button class="btn btn-outline-dark fw-bold"><i class="fa-solid fa-arrow-right-from-bracket fa-rotate-180 mx-1"></i>Volver</button></a>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/corazones.png" alt="corazones.png" class="img-thumbnail border-0">
+                    </div>
+                    <div class="col-md-8">
+                        <label for="Nombre" class="fw-bolder mb-2">Nombre: </label>
+                        <input type="text" name="Nombre" placeholder="Nombre Autor" class="form-control">
+                        <label for="Descripción" class="fw-bolder my-2">Descripción: </label>
+                        <textarea name="Descripción" id="" cols="30" rows="4" class="form-control" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></textarea>
+                        <label for="Estado" class="fw-bolder my-2">Estado: </label>
+                        <select name="Estado" class="form-control">
+                            <option value="estado">estado</option>
+                        </select>
+                        <label for="Fecha" class="fw-bolder my-2">Fecha: </label>
+                        <input type="date" name="Fecha" placeholder="dd/mm/aaaa" class="form-control">
+                        <label for="Enlace" class="fw-bolder my-2">Enlace: </label>
+                        <input type="text" name="Enlace" placeholder="http://enlace.com" class="form-control">
+                        <label for="Repositorio" class="fw-bolder my-2">Repositorio: </label>
+                        <input type="text" name="Repositorio" placeholder="user.github.com/123456" class="form-control">
+                        <button class="btn btn-success mt-3">Subir Proyecto</button>
+                    </div>
                 </div>
             </div>
         </div>
