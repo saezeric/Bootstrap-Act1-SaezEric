@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Proyectos</title>
+    <title>Usuarios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f16458d8c0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
@@ -38,7 +38,7 @@
             </div>
             <div>
                 <form class="d-flex justify-content-end">
-                    <a href="#" class="text-decoration-none text-light mx-3 align-middle">
+                    <a href="proyectos.html" class="text-decoration-none text-light mx-3 align-middle">
                         PROYECTOS 
                         <img src="images/user.png" alt="" class="mx-2">
                         <i class="fa-solid fa-sort-down"></i>
@@ -51,14 +51,13 @@
     
     <!-- Contenido -->
     <main>
-        </div>
         <div class="container-fluid my-5">
-            <div class="container">
+            <div class="container-fluid">
                 <h1>Panel de Administración</h1>
                 <div class="card mt-5">
                     <div class="d-flex">
-                        <h3 class="w-50 card card-header lead fw-normal"><a href="usuarios.html" class="text-decoration-none">Usuarios</a></h3>
-                        <h3 class="w-50 d-flex align-items-center align-middle px-3 lead fw-normal">Proyectos</h3>
+                        <h3 class="w-50 d-flex align-items-center align-middle px-3 lead fw-normal mt-2">Usuarios</h3>
+                        <h3 class="w-50 card card-header lead fw-normal"><a href="proyectos.html" class="text-decoration-none">Proyectos</a></h3>
                     </div>
                     <div class="card-body">
                         <div class="d-flex row">
@@ -73,34 +72,40 @@
                                 <thead class="border-dark">
                                     <tr>
                                         <th scope="col"></th>
+                                        <th scope="col">URL imagen <i class="fa-solid fa-sort-down"></i></th>
+                                        <th scope="col">Email <i class="fa-solid fa-sort-down"></i></th>
                                         <th scope="col">Nombre <i class="fa-solid fa-sort-down"></i></th>
-                                        <th scope="col">Descripción <i class="fa-solid fa-sort-down"></i></th>
-                                        <th scope="col">Enalce <i class="fa-solid fa-sort-down"></i></th>
-                                        <th scope="col">Repositorio</th>
-                                        <th scope="col">Autor <i class="fa-solid fa-sort-down"></i></th>
+                                        <th scope="col">Apellidos</th>
                                         <th scope="col">Fecha <i class="fa-solid fa-sort-down"></i></th>
+                                        <th scope="col">Rol <i class="fa-solid fa-sort-down"></i></th>
                                         <th scope="col">Estado <i class="fa-solid fa-sort-down"></i></th>
                                         <th scope="col"></th>
                                         <th scope="col"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
+
+
                                     <tr class="align-middle">
-                                        <th scope="row"><img src="images/corazon.png" alt=""></th>
-                                        <td>Proyecto ejemplo 1</td>
-                                        <td>Ejemplo de web para centro fp</td>
-                                        <td><a href="http://www.fpllefia.com">http://www.fpllefia.com</a></td>
-                                        <td><a href="carrebola.github.com/juego1">carrebola.github.com/juego1</a></td>
-                                        <td>Carlos</td>
-                                        <td>13/12/2021</td>
-                                        <td>?</td>
+                                        <th scope="row"><img src="images/userEdit.png" alt=""></th>
+                                        <td><input type="text" class="form-control" value="http://imagen.com"></td>
+                                        <td><input type="text" class="form-control" value="email@email.com"></td>
+                                        <td><input type="text" class="form-control" value="Nombre Usuario"></td>
+                                        <td><input type="text" class="form-control" value="Apellidos Usuario"></td>
+                                        <td><input type="date" class="form-control" value="dd/mm/aaaa"></td>
                                         <td>
-                                            <a href="editarProyecto.html" class="">
-                                                <button class="btn btn-outline-primary">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
-                                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-                                                    </svg>
-                                                </button>
+                                            <select name="Opcion" class="form-control">
+                                                <option value="Opción">Opción</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="Opcion" class="form-control">
+                                                <option value="Opción">Opción</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="">
+                                                <button type="button" class="btn btn-success w-100">Actualizar</button>
                                             </a>
                                         </td>
                                         <td>
@@ -114,22 +119,28 @@
                                             </a>
                                         </td>
                                     </tr>
+
+
                                     <tr class="align-middle">
-                                        <th scope="row"><img src="images/corazon.png" alt=""></th>
-                                        <td>Proyecto ejemplo 1</td>
-                                        <td>Ejemplo de web para centro fp</td>
-                                        <td><a href="http://www.fpllefia.com">http://www.fpllefia.com</a></td>
-                                        <td><a href="carrebola.github.com/juego1">carrebola.github.com/juego1</a></td>
-                                        <td>Carlos</td>
-                                        <td>13/12/2021</td>
-                                        <td>?</td>
+                                        <th scope="row"><img src="images/userEdit.png" alt=""></th>
+                                        <td><input type="text" class="form-control" value="http://imagen.com"></td>
+                                        <td><input type="text" class="form-control" value="email@email.com"></td>
+                                        <td><input type="text" class="form-control" value="Nombre Usuario"></td>
+                                        <td><input type="text" class="form-control" value="Apellidos Usuario"></td>
+                                        <td><input type="date" class="form-control" value="dd/mm/aaaa"></td>
                                         <td>
-                                            <a href="editarProyecto.html" class="">
-                                                <button class="btn btn-outline-primary">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
-                                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-                                                    </svg>
-                                                </button>
+                                            <select name="Opcion" class="form-control">
+                                                <option value="Opción">Opción</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="Opcion" class="form-control">
+                                                <option value="Opción">Opción</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="">
+                                                <button type="button" class="btn btn-success w-100">Actualizar</button>
                                             </a>
                                         </td>
                                         <td>
@@ -143,22 +154,28 @@
                                             </a>
                                         </td>
                                     </tr>
+
+
                                     <tr class="align-middle">
-                                        <th scope="row"><img src="images/corazon.png" alt=""></th>
-                                        <td>Proyecto ejemplo 1</td>
-                                        <td>Ejemplo de web para centro fp</td>
-                                        <td><a href="http://www.fpllefia.com">http://www.fpllefia.com</a></td>
-                                        <td><a href="carrebola.github.com/juego1">carrebola.github.com/juego1</a></td>
-                                        <td>Carlos</td>
-                                        <td>13/12/2021</td>
-                                        <td>?</td>
+                                        <th scope="row"><img src="images/userEdit.png" alt=""></th>
+                                        <td><input type="text" class="form-control" value="http://imagen.com"></td>
+                                        <td><input type="text" class="form-control" value="email@email.com"></td>
+                                        <td><input type="text" class="form-control" value="Nombre Usuario"></td>
+                                        <td><input type="text" class="form-control" value="Apellidos Usuario"></td>
+                                        <td><input type="date" class="form-control" value="dd/mm/aaaa"></td>
                                         <td>
-                                            <a href="editarProyecto.html" class="">
-                                                <button class="btn btn-outline-primary">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
-                                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-                                                    </svg>
-                                                </button>
+                                            <select name="Opcion" class="form-control">
+                                                <option value="Opción">Opción</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="Opcion" class="form-control">
+                                                <option value="Opción">Opción</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="">
+                                                <button type="button" class="btn btn-success w-100">Actualizar</button>
                                             </a>
                                         </td>
                                         <td>
