@@ -38,11 +38,43 @@
             </div>
             <div>
                 <form class="d-flex justify-content-end">
-                    <a href="proyectos.html" class="text-decoration-none text-light mx-3 align-middle">
-                        PROYECTOS 
-                        <img src="images/user.png" alt="" class="mx-2">
-                        <i class="fa-solid fa-sort-down"></i>
-                    </a>
+                    <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="panelAdmin.html">Panel de Administración</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="proyectos.html">PROYECTOS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                <img src="./images/avatar.svg" alt="" width="25" />
+                            </a>
+                            <!-- Menú usuario -->
+                            <ul class="dropdown-menu me-0" style="left: -100px; width: 100px">
+                                <li class="text-light text-center p-2">
+                                    <p>user@email.com</p>
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="inicioSesion.html">Iniciar Sesion</a></li>
+                                <li><a class="dropdown-item" href="registro.html">Registrarse</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="editPerfil.html">Editar perfil</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="proyectos.html">Proyectos</a></li>
+                                <li><a class="dropdown-item" href="subirProyecto.html">Nuevo Proyecto</a></li>
+                                <li><a class="dropdown-item" href="detalles.html">Detalles del Proyecto</a></li>
+                                <li><a class="dropdown-item" href="editarProyecto.html">Editar Proyecto</a></li>
+                                <li><a class="dropdown-item" href="panelAdmin.html">Panel Administración</a></li>
+                                <li><a class="dropdown-item" href="usuarios.html">Editar Usuarios</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </form>
             </div>
           </div>
@@ -87,7 +119,7 @@
 
 
                                     <tr class="align-middle">
-                                        <th scope="row"><img src="images/userEdit.png" alt=""></th>
+                                        <th scope="row"><a href="editPerfil.html"><img src="images/userEdit.png" alt=""></a></th>
                                         <td><input type="text" class="form-control" value="http://imagen.com"></td>
                                         <td><input type="text" class="form-control" value="email@email.com"></td>
                                         <td><input type="text" class="form-control" value="Nombre Usuario"></td>
